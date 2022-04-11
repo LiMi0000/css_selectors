@@ -1,0 +1,68 @@
+/* all selector */
+
+* {
+  /* debugging css */
+  border: 1px solid black;
+}
+/* tag selector */
+h2 {
+  color: brown;
+}
+/* id selector */
+#first-title {
+  font-size: 23px;
+}
+/* class selector */
+.justify {
+  text-align: justify;
+}
+.color-dark-blue {
+  color: darkblue;
+}
+/* direct child selector */
+section > article {
+  border: 2px solid red;
+}
+/* descendant selector grandchild and so on */
+section a {
+  background-color: red;
+  color: #fff;
+}
+/* Adjacent sibling selector */
+h3 + p {
+  font-weight: bold;
+}
+/* general sibling selector */
+h3 ~ p {
+  background-color: pink;
+}
+/* tag and class selector */
+p.justify {
+  border: 3px solid green;
+}
+/* tag and id selector */
+h3#first-title {
+  border: 3px solid blue;
+}
+/* multiple element selection  */
+h2,
+h3 {
+  text-decoration: underline;
+}
+/* last rule */
+a {
+  color: #2f4f4f;
+}
+/* specificity selector */
+.link {
+  color: orange;
+}
+/* important - do not use please  */
+/* a{
+    color: aqua !important;
+} */
+
+/* a very specific selector */
+body > section > article > p.justify.color-dark-blue > a.link {
+  background-color: green;
+}
